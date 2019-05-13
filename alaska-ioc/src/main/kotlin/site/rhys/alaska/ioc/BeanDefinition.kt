@@ -7,9 +7,7 @@ interface BeanDefinition {
 
     fun getName(): String
 
-    fun getDependsOnBeanName(): Array<String>
-
-    fun getDependsOnBeanClass(): Array<KClass<Any>>
+    fun getDependsOn(): Array<BeanDefinition>
 
     fun getScope(): Int
 
